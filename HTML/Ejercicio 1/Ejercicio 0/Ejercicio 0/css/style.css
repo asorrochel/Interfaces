@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'trebuchet ms', sans-serif;
+    font-weight: normal;
+   
+}
+
+h1, h2, h3, h4, h5 {
+    color: #362c20;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#header {
+    background-color: #1d1d1d;
+    border-bottom: 1px solid #3D3D3D;
+    margin: 0 33px;
+    padding-top: 5px;
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#header h2 {
+    color: #b58989;
+    margin-top: 15px;
+    font-size: 1rem;
+    margin-bottom: 38px;
+}
+
+#menubar {
+    width: 100%;
+    height: 50px;
+    background-color: #2D2D2D;
+    border-bottom: 1px solid #3D3D3D;
+    color: #fff;
+    padding: 0 10px;
+}
+
+#menu {
+    float:right;
+    list-style: none;
+}
+
+#menu li {
+    float:left;
+    margin: 10px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    background-color: #5b4239;
+    padding: 12px 19px;
+}
+
+#menu a:hover {
+    background-color: #e6bcbc;
+}
+
+#site_content {
+    background-color: white;
+    margin: 10px 33px 17px;
+}
+
+#sidebar_container {
+    float: left;
+    width: 25%;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    margin-right: 15px;
+}
+
+.sidebar {
+    border: 1px solid #b58989;
+    border-radius: 10px;
+    width: auto;
+    padding: 22px 14px;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar h4 {
+    color: #b58989;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.sidebar h5 {
+    color: #9a9a9a;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #b58989;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.sidebar li, #content li {
+    background: url(/HTML/Ejercicio\ 1/Ejercicio\ 0/Ejercicio\ 0/img/bullet.png) no-repeat;
+    list-style: none;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+
+#content {
+    margin-top: 15px;
+    float: left;
+    width: 70%;
+    
+}
+
+#content h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#content h2 {
+    font-size: 20px;
+    color: #b58989;
+    margin: 20px 0;
+}
+
+#content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#footer {
+    clear: both;
+    background-color: black;
+    color: #fff;
+    height: 85px;
+    padding: 30px;
+    margin: 0px 33px 39px 33px;
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: normal;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+#banner {
+    background-color: #b58989;
+    background: transparent url(/HTML/Ejercicio\ 1/Ejercicio\ 0/Ejercicio\ 0/img/banner.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border: 10px solid #DDD;
+    height: 161px;
+}
+
+@media only screen and (max-width: 650px) {
+    #content {
+        width: 100%; 
+    }
+
+    #sidebar_container{
+        width: 100%;
+    }
+
+    #menubar {
+        width: 100%;
+
+    }
+
+    #menu {
+        float: none;
+        width: 100%;
+    }
+
+    #header {
+        margin: 0;
+    }
+
+    #footer {
+        margin: 0;
+    }
+
+    #banner {
+        height: 100px;
+    }
+
+    #menu a {
+        margin: 5px;
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+  }
+
+  @media (max-width:650px) and (min-width:900px) {
+    .class {
+        display: none;
+    }
+}
