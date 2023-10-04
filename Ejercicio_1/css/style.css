@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+#menu_logo {
+    float: left;
+}
+
+#menu_logo img {
+    width: 100px;
+}
+
+#menu_btns{
+    float: right;
+    margin-right: -20px;
+}
+
+#btn-iniciar-sesion {
+    background-color: #0095F6;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btn-registrarse{
+    background-color: #fff;
+    color: #0095F6;
+    border: 1px transparent;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+#img_publicacion {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#usuario {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+
+#usuario_img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#usuario_info {
+    float: left;
+    margin-top: 10px;
+}
+
+#usuario_info a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #0095F6;
+}
+
+#verificado{
+    float: left;
+    margin-left: 5px;
+}
+
+#usuario_nombre {
+    font-size: 14px;
+    float: left;
+}
+
+#usuario_follow {
+    float: left;
+}
+
+#usuario_location {
+    clear: both;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#usuario_dot {
+    float: left;
+}
+
+#icon_ellipsis {
+    float: right;
+}
+
+.fa-ellipsis-h {
+    font-size: 20px;
+}
+#etiqueta_usuario {
+    position: absolute;
+    top: 63%;
+    left: 1%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.iconos {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.fa-heart-o ,.fa-comment-o, .fa-paper-plane-o, .fa-bookmark-o {
+    font-size: 25px;
+    color: #262626;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+#icon_bookmark{
+    float: right;
+}
+
+#imagen_footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+#me_gusta{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#fecha {
+    clear: both;
+    margin-left: 10px;
+    font-size: 10px;
+    color : #8e8e8e;
+}
+
+.linea {
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin-top: 10px;
+}
+
+#comentario_texto {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#comentario_fecha {
+    float: left;
+    font-size: 10px;
+    color: #8e8e8e;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+
+#add_comment{
+    text-align: center;
+}
+
+.fa-plus-circle {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#comentario_poster_usuario {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px)  {
+    #contenedor {
+        width: 600px;
+    }
+
+    #usuario {
+        width: 600px;
+    }
+
+    #usuario_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #usuario_info {
+        margin-top: 15px;
+    }
+
+    #usuario_info a {
+        font-size: 14px;
+    }
+
+    #usuario_nombre {
+        font-size: 16px;
+    }
+
+    #usuario_location {
+        font-size: 14px;
+    }
+
+    #usuario_dot {
+        margin-top: 15px;
+    }
+
+    #icon_ellipsis {
+        margin-top: 15px;
+    }
+
+    #etiqueta_usuario {
+        top: 65%;
+        left: 1%;
+    }
+
+    .fa-heart-o ,.fa-comment-o, .fa-paper-plane-o, .fa-bookmark-o {
+        font-size: 30px;
+    }
+
+    #imagen_footer {
+        height: 70px;
+    }
+
+    #me_gusta{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    #fecha {
+        font-size: 12px;
+    }
+
+    #comentario_texto {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    #comentario_fecha {
+        font-size: 12px;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    #add_comment{
+        text-align: left;
+    }
+
+    .fa-plus-circle {
+        margin-right: 10px;
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    #comentario_poster_usuario {
+        margin-bottom: 20px;
+    }
+    
+
+
+}
