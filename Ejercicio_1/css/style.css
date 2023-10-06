@@ -18,9 +18,27 @@ header {
     text-align: center;
 }
 
+.clear {
+    clear: both;
+}
+
+.fa-ellipsis-h {
+    margin-top: 15px;
+    margin-right: 15px;
+
+}
+
+#usuarioMovil {
+    margin-left: 10px;
+}
 
 #menu_logo {
     float: left;
+    margin-top: 5px;
+}
+
+#icon_instagram, #barra {
+    display: none;
 }
 
 #menu_logo img {
@@ -65,6 +83,10 @@ header {
     width: 100%;
     height: auto;
     margin-top: 10px;
+}
+
+#input-buscar {
+    display: none;
 }
 
 #usuario {
@@ -119,7 +141,9 @@ header {
 #usuario_dot {
     float: left;
 }
-
+#iniciar_sesion_desktop {
+    display: none;
+}
 #icon_ellipsis {
     float: right;
 }
@@ -141,7 +165,7 @@ header {
     margin-right: 10px;
 }
 
-.fa-heart-o ,.fa-comment-o, .fa-paper-plane-o, .fa-bookmark-o {
+.fa-instagram, .fa-heart-o ,.fa-comment-o, .fa-paper-plane-o, .fa-bookmark-o {
     font-size: 25px;
     color: #262626;
     cursor: pointer;
@@ -177,7 +201,7 @@ header {
 .linea {
     width: 100%;
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: #DBDBDB;
     margin-top: 10px;
 }
 
@@ -213,92 +237,161 @@ header {
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 600px)  {
+
+#desktopVersion {
+    display: none;
+}
+
+#info_plus_iniciar {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+
+    header {
+        width: 100%;
+        margin: auto;
+    }
+
     #contenedor {
-        width: 600px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        position: relative;
+        
     }
 
-    #usuario {
-        width: 600px;
+    #img_publicacion {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
     }
 
-    #usuario_img {
-        width: 50px;
-        height: 50px;
+    #usuarioMovil {
+        display: none;
     }
 
-    #usuario_info {
-        margin-top: 15px;
+    #desktopVersion {
+        width: 40%;
+        display: block;
+        float: right;
+        margin-top: 10px;
+        border: 1px solid #DBDBDB;
+        box-sizing: border-box;
     }
 
-    #usuario_info a {
-        font-size: 14px;
+    #publicacion {
+        float: left;
+        width: 60%;
     }
 
-    #usuario_nombre {
-        font-size: 16px;
-    }
-
-    #usuario_location {
-        font-size: 14px;
-    }
-
-    #usuario_dot {
-        margin-top: 15px;
-    }
-
-    #icon_ellipsis {
-        margin-top: 15px;
-    }
-
-    #etiqueta_usuario {
-        top: 65%;
-        left: 1%;
-    }
-
-    .fa-heart-o ,.fa-comment-o, .fa-paper-plane-o, .fa-bookmark-o {
-        font-size: 30px;
-    }
-
-    #imagen_footer {
+    #usuarioDesktop{
+        width: 100%;
         height: 70px;
+        padding: 10px;
     }
 
-    #me_gusta{
-        margin-top: 15px;
-        margin-bottom: 20px;
+
+    #comentariosDesktop{
+        clear: both;
+    }
+
+    #movilVersion {
+        display: none;
+    }
+
+    #iniciar_sesion_desktop {
+        display: block;
+    }
+
+    #iniciar_sesion_desktop span {
         font-size: 14px;
+        color: #0095F6;
+        font-weight: bold;
     }
 
-    #fecha {
-        font-size: 12px;
-    }
-
-    #comentario_texto {
-        height: 50px;
+    #iniciar_sesion_desktop p {
         font-size: 14px;
+        color: #8e8e8e;
     }
 
-    #comentario_fecha {
+    #input-buscar {
+        display: block;
+        float: right;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #DBDBDB;
+        border-radius: 5px;
+        padding: 5px;
         font-size: 12px;
-        margin-left: 50px;
-        margin-top: 15px;
+        text-align: center;
+        margin: 0 30% 0 auto;
     }
 
-    #add_comment{
-        text-align: left;
+    #menu_logo {
+        margin: 0 auto 0 1%;
     }
 
-    .fa-plus-circle {
-        margin-right: 10px;
-        margin-top: 15px;
-        font-size: 30px;
+    #menu_btns {
+        display: none;
     }
 
-    #comentario_poster_usuario {
-        margin-bottom: 20px;
+    #barra {
+        font-size: 20px;
+        display: block;
+        float: left;
+        margin: 0 auto 0 1%;
+        font-weight: bold;
+    }
+
+    #icon_instagram {
+        float: left;
+        display: block;
+        margin: 0 auto 0 10%;
+    }
+
+    #info_plus_iniciar {
+        border: 1px solid #DBDBDB;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #menu_btns{
+        float: right;
+        margin-right: -20px;
     }
     
+    #btn-iniciar-sesion {
+        background-color: #0095F6;
+        color: #fff;
+        border: none;
+        padding: 8px 8px;
+        border-radius: 10px;
+        font-size: 9px;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+        
+    }
+    
+    #btn-registrarse{
+        background-color: #fff;
+        color: #0095F6;
+        border: 1px transparent;
+        padding:8px 8px;
+        border-radius: 10px;
+        font-size: 9px;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+        
+    }
 
-
+    #menu_logo  {
+        width: 75px;
+    }
 }
