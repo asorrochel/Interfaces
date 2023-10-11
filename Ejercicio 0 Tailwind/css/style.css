@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'trebuchet ms', sans-serif;
+    font-weight: normal;
+   
+}
+
+h1, h2, h3, h4, h5 {
+    color: #362c20;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+
+.sidebar li, #content li {
+    background: url(././img/bullet.png) no-repeat;
+    list-style: none;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                
+              },
+              fontFamily: {
+                roboto: ['Roboto', 'sans-serif'],
+              },
+            }
+          }
+        }
+      </script>
+    <title>Instagram Rosalia</title>
+</head>
+<body class="font-roboto bg-[#f2f2f2]">
+    <header class="p-5 w-full h-[70px] bg-white shadow-sm flex flex-row items-center justify-between">
+        <div class="flex flex-row justify-between ">
+            <i class="fa fa-instagram mx-8 md:block hidden cursor-pointer text-2xl" aria-hidden="true"></i>
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="logo">
+        </div>
+        <div class="flex flex-row justify-between md:hidden ml-2">
+            <button class="bg-[#0095F6] text-white p-1 rounded-lg text-sm font-bold cursor-pointer mr-2">Iniciar sesión</button>
+            <button class="bg-white text-[#0095F6] p-1 rounded-lg text-sm font-bold cursor-pointer">Registrarse</button>
+        </div>
+        <input class="hidden md:block md:border border-slate-200 rounded-md p-2" type="text" placeholder="Buscar">
+    </header>
+    <main class="flex md:justify-center md: md:my-10">
+        <div class="flex flex-col w-full md:flex-row md:w-2/3">
+            <!-- USUARIO CABECERA-->
+            <div class="md:hidden flex flex-row items-center m-2 space-x-2 relative">
+                <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil.jpg" alt="usuario">
+                <div id="flex flex-col">
+                    <div class="flex flex-row items space-x-1 items-center">
+                        <p class="text-sm">rosalia.vt</p>
+                        <svg aria-label="Verificado" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
+                        <p>•</p>
+                        <a class="text-sm text-[#0095F6] font-bold"> Seguir</a>
+                    </div>
+                    <p class="text-sm">Paris, France</p>
+                </div>
+                <i class="fa fa-ellipsis-h absolute right-0" aria-hidden="true"></i>
+            </div>
+            <!-- PUBLICACION-->
+            <div class="relative">
+                <img class="w-full h-auto" src="./img/Captura.PNG" alt="imagen">
+                <div class="bottom-0 absolute z-10 bg-slate-400 rounded-full p-1 ml-1">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Escritorio-->
+            <div class="hidden md:flex md:flex-col md:relative border-2 border-blac">
+                <!-- USUARIO -->
+                <div class="flex flex-row items-center m-2 space-x-2 relative">
+                    <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil.jpg" alt="usuario">
+                    <div id="flex flex-col">
+                        <div class="flex flex-row items space-x-1 items-center">
+                            <p class="text-sm">rosalia.vt</p>
+                            <svg aria-label="Verificado" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
+                            <p>•</p>
+                            <a class="text-sm text-[#0095F6] font-bold"> Seguir</a>
+                        </div>
+                        <p class="text-sm">Paris, France</p>
+                    </div>
+                    <i class="fa fa-ellipsis-h absolute right-0" aria-hidden="true"></i>
+                </div>
+                <div class="w-full h-[1px] bg-[#DBDBDB] mt-2"></div>
+                <!-- INFO-->
+                <div class=" flex flex-row items-center m-2 space-x-2">
+                    <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil.jpg" alt="usuario">
+                    <div id="flex flex-col">
+                        <div class="flex flex-row items space-x-1 items-center">
+                            <p class="text-sm">rosalia.vt</p>
+                            <svg aria-label="Verificado" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
+                            <p class="text-[12px]">Performing en LA. ❤ Thissssss WEEKEND Calibash ❤ Hi</p>
+                        </div>
+                        <p class="text-sm text-[#8e8e8e]">Hace 4 días</p>
+                    </div>
+                </div>
+                <!-- ADD COMENTARIO-->
+                <div class="text-center my-1">
+                <i class="fa fa-plus-circle text-2xl" aria-hidden="true"></i>
+                </div>
+                <!-- + COMENTARIOS -->
+                <div class="flex flex-row items-center m-2 space-x-2">
+                    <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil2.jpg" alt="usuario">
+                    <div id="flex flex-col">
+                        <div class="flex flex-row items space-x-1 items-center">
+                            <p class="text-sm">jenny.lmk</p>
+                            <p class="text-[12px]">❤❤❤</p>
+                        </div>
+                        <div class="flex flex-row space-x-10">
+                            <p class="text-sm text-[#8e8e8e]">Hace 4 días</p>
+                            <p class="text-sm text-[#8e8e8e]">Responder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-[1px] bg-[#DBDBDB] mt-2"></div>
+
+                <!-- INFO EXTRA-->
+                <div class="absolute bottom-0 w-full">
+                    <div class="w-full h-[1px] bg-[#DBDBDB] mt-2"></div>
+                    <div class="flex flex-row space-x-2 mt-2 ml-2 relative">
+                        <i class="fa fa-heart-o text-2xl" aria-hidden="true"></i>
+                        <i class="fa fa-comment-o text-2xl" aria-hidden="true"></i>
+                        <i class="fa fa-paper-plane-o text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o absolute right-0 top-0 text-2xl mt-2 mr-2" aria-hidden="true"></i>
+                    <div class="flex flex-col ml-2 my-2">
+                        <p class="text-sm font-bold mb-2">2.820.691 Me gusta</p>
+                        <p class="text-sm text-[#8e8e8e]">HACE 4 DÍAS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Movil -->
+            <div class="md:hidden flex flex-col ">
+                <div class="flex flex-row space-x-2 mt-2 ml-2 relative">
+                    <i class="fa fa-heart-o text-2xl" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o text-2xl" aria-hidden="true"></i>
+                    <i class="fa fa-paper-plane-o text-2xl" aria-hidden="true"></i>
+                </div>
+                <i class="fa fa-bookmark-o absolute right-0 text-2xl mt-2 mr-2" aria-hidden="true"></i>
+                <div class="flex flex-col ml-2 my-2">
+                    <p class="text-sm font-bold mb-2">2.820.691 Me gusta</p>
+                    <p class="text-sm text-[#8e8e8e]">HACE 4 DÍAS</p>
+                </div>
+                <div class="w-full h-[1px] bg-[#DBDBDB] mt-2"></div>
+                <!-- COMENTARIOS-->
+                <div class="md:hidden flex flex-row items-center m-2 space-x-2">
+                <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil.jpg" alt="usuario">
+                <div id="flex flex-col">
+                    <div class="flex flex-row items space-x-1 items-center">
+                        <p class="text-sm">rosalia.vt</p>
+                        <svg aria-label="Verificado" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
+                        <p class="text-[12px]">Performing en LA. ❤ Thissssss WEEKEND Calibash ❤ Hi</p>
+                    </div>
+                    <p class="text-sm text-[#8e8e8e]">Hace 4 días</p>
+                </div>
+                </div>
+                <!-- ADD COMENTARIO-->
+                <div class="text-center my-1 text-2xl">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+                <!-- + COMENTARIOS -->
+                <div class="md:hidden flex flex-row items-center m-2 space-x-2">
+                <img class="shadow-sm rounded-full w-8 h-8" src="./img/perfil2.jpg" alt="usuario">
+                <div id="flex flex-col">
+                    <div class="flex flex-row items space-x-1 items-center">
+                        <p class="text-sm">jenny.lmk</p>
+                        <p class="text-[12px]">❤❤❤</p>
+                    </div>
+                    <div class="flex flex-row space-x-10">
+                        <p class="text-sm text-[#8e8e8e]">Hace 4 días</p>
+                        <p class="text-sm text-[#8e8e8e]">Responder</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
