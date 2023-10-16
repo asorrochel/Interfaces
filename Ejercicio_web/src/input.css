@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.borderD {
+    @apply border-2 border-white box-border
+}
+
+body {
+    @apply h-screen 
+}
+
+
