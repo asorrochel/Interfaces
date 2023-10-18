@@ -3,11 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?20231011" >
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Plantilla con Tailwind CSS</title>
 </head>
 <body>
-    <h1 class="text-lg bg-primary">HOLA</h1>
-    <h2 class="hola">GATO</h2>
+    <div class="w-full bg-gris_primario">
+        <header class="w-full flex flex-row justify-between">
+          <div class="text-gris_textos">
+            <h1 class="text-3xl"><a href="#">Plantilla</a></h1>
+            <h2>Reproduce esta plantilla</h2>
+          </div>
+          <nav class="flex items-center">
+            <ul class="flex flex-row space-x-2 items-center bg-gris_secundario text-gris_textos pt-3 pb-1 px-2 ">
+              <li class="p-1"><a href="#">Text Link</a></li>
+              <li class="p-1"><a href="#">Text Link</a></li>
+              <li class="p-1"><a href="#">Text Link</a></li>
+              <li class="p-1"><a href="#">Text Link</a></li>
+              <li class="p-1" class="last"><a href="#">Text Link</a></li>
+            </ul>
+          </nav>
+        </header>
+    </div>
+      <div class="w-full">
+        <div class="w-full flex flex-col items-center justify-center">
+            <div class="flex items-center justify-center ">
+                <section class="my-4 mx-1">
+                    <img  src="./img/bob.jpg" alt="">
+                </section>
+            </div>
+          <div class="w-full">
+            <section class="flex items-center justify-center">
+              <article >
+                <figure class="flex flex-col items-center justify-center"><img  class=" p-2 border border-gris_textos" src="./img/bob.jpg" width="290" height="180" alt="">
+                  <figcaption>
+                    <h2 class="text-xl text-gris_primario font-bold">Indonectetus facilis</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                    <footer class="text-end"><a class="text-naranja_enlaces" href="#">Read More &raquo;</a></footer>
+                  </figcaption>
+                </figure>
+              </article>
+              <article>
+                <figure class="flex flex-col items-center justify-center"><img class=" p-2 border border-gris_textos" src="./img/bob.jpg" width="290" height="180" alt="">
+                  <figcaption>
+                    <h2 class="text-xl text-gris_primario font-bold">Indonectetus facilis</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                    <footer class="text-end"><a class="text-naranja_enlaces" href="#">Read More &raquo;</a></footer>
+                  </figcaption>
+                </figure>
+              </article>
+              <article>
+                <figure class="flex flex-col items-center justify-center"><img class=" p-2 border border-gris_textos" src="./img/bob.jpg" width="290" height="180" alt="">
+                  <figcaption>
+                    <h2 class="text-xl text-gris_primario font-bold">Indonectetus facilis</h2>
+                    <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+                    <footer class="text-end"><a class="text-naranja_enlaces" href="#">Read More &raquo;</a></footer>
+                  </figcaption>
+                </figure>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="wrapper row3">
+        <div id="footer" class="clear">
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="wrapper row4">
+        <footer id="copyright" class="bg-gris_primario">
+          <p class="text-gris_textos ml-2 p-2">Diseño de Interfaces Web <a href="#">IES Comercio</a></p>
+        </footer>
+      </div>
 </body>
 </html>

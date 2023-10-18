@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#f3c614",
+        "gris_primario": "#333333",
+        "gris_secundario": "#232323",
+        "gris_textos": "#B4B4B4",
+        "naranja_enlaces": "#FFA502",
     },
   },
   plugins: [],
