@@ -534,6 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -610,6 +618,11 @@ video {
   border-radius: 0.125rem;
 }
 
+.bg-gray\/default {
+  --tw-bg-opacity: 1;
+  background-color: rgb(121 129 154 / var(--tw-bg-opacity));
+}
+
 .bg-gray\/lightest {
   --tw-bg-opacity: 1;
   background-color: rgb(226 230 238 / var(--tw-bg-opacity));
@@ -618,6 +631,11 @@ video {
 .bg-socilal\/linkedin {
   --tw-bg-opacity: 1;
   background-color: rgb(0 119 181 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {

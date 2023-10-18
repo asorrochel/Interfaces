@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>EJERCICIO CURRICULUM</title>
 </head>
-<body class="w-full ">
+<body class="w-full bg-white ">
     <div class="flex flex-row justify-center">
         <aside class="flex flex-col justify-center items-center flex-shrink-0">
             <img src="img/perfil.png">
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </aside>
-        <div class="flex items-start py-8 pl-4 pr-6">
+        <div class="flex flex-col items-start py-8 pl-4 pr-6">
             <!-- Experiencia-->
             <div class="flex justify-center items-start gap-4 self-stretch">
                 <div class="flex flex-col items-center self-stretch">
@@ -223,7 +223,7 @@
                       </svg>
                 </div>
                 <div class="flex flex-col items-start gap-4">
-                    <h2>Experiencia</h2>
+                    <h2 class="text-gray/darker">Experiencia</h2>
                     <div>
                         <div class="flex flex-row">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
@@ -363,6 +363,132 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Ultimos proyectos-->
+            <div class="flex items-start gap-4 self-stretch">
+              <div class="flex flex-col items-center self-stretch">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="162" viewBox="0 0 2 162" fill="none">
+                    <g clip-path="url(#clip0_52_26500)">
+                      <rect x="0.875" y="0.125" width="0.25" height="161.75" stroke="#2E2E48" stroke-width="0.25" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_52_26500">
+                        <rect width="0.5" height="162" fill="white" transform="translate(0.75)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+              </div>
+              <div class="flex flex-col">
+                <h2 class="text-gray/darker">Últimos proyectos</h2>
+                <div class="flex flex-row mt-4">
+                  <div class="flex flex-col m-3 bg-gray/lightest rounded-sm">
+                    <img src="img/blockbuddy.png" alt="">
+                    <h3>Blockbuddy</h3>
+                    <p>TFG - 2º DUAL MULWEB - BlockBuddy</p>
+                    <div class="flex flex-row">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                          <g clip-path="url(#clip0_319_124)">
+                            <path d="M3.04529 7.125C2.52501 7.12902 2.05895 6.80389 1.88311 6.31421C1.70727 5.82452 1.86003 5.27718 2.26404 4.94934C1.97748 4.7174 1.81099 4.36846 1.81099 3.9998C1.81099 3.63114 1.97748 3.2822 2.26404 3.05027C1.8599 2.72253 1.70704 2.17516 1.88292 1.68545C2.0588 1.19574 2.52498 0.870685 3.04529 0.874919H4.95467C5.47498 0.870685 5.94117 1.19574 6.11704 1.68545C6.29292 2.17516 6.14006 2.72253 5.73592 3.05027C6.13994 3.37812 6.2927 3.92546 6.11685 4.41515C5.94101 4.90483 5.47495 5.22996 4.95467 5.2259C4.71435 5.22619 4.47919 5.15624 4.27811 5.02465V5.89965C4.27518 6.57808 3.72373 7.12617 3.04529 7.125ZM3.03842 5.22621C2.66827 5.23206 2.37239 5.53582 2.37627 5.90599C2.38015 6.27616 2.68234 6.57366 3.05253 6.57175C3.42272 6.56982 3.72181 6.26921 3.72186 5.89902V5.22621H3.03811H3.03842ZM4.95498 3.32715C4.58385 3.32904 4.28435 3.63111 4.28561 4.00224C4.28687 4.37337 4.58842 4.67339 4.95956 4.67276C5.33069 4.67213 5.63123 4.3711 5.63123 3.99996C5.62985 3.62748 5.32715 3.32646 4.95467 3.32715H4.95498ZM3.04561 3.32714C2.80523 3.32586 2.58244 3.45291 2.46114 3.66044C2.33984 3.86797 2.33847 4.12444 2.45754 4.33325C2.57662 4.54206 2.79805 4.67149 3.03842 4.67277H3.72186V3.32714H3.04561ZM4.27811 1.42809V2.77403H4.95436C5.31608 2.77571 5.61452 2.49134 5.63029 2.12996V2.2659V2.1009C5.62875 1.72886 5.32671 1.42809 4.95467 1.42809H4.27811ZM3.04498 1.42809C2.80461 1.42809 2.5825 1.55632 2.46231 1.76449C2.34212 1.97266 2.34212 2.22914 2.46231 2.4373C2.5825 2.64547 2.80461 2.77371 3.04498 2.77371H3.72186V1.42809H3.04498Z" fill="#516CF7"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_319_124">
+                              <rect width="7.5" height="7.5" fill="white" transform="translate(0.25 0.25)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <a href="#">github</a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col m-3 bg-gray/lightest rounded-sm">
+                    <img src="img/kata.png" alt="">
+                    <h3>kataPelis</h3>
+                    <p>loren loren  loren loren  loren loren  loren loren loren loren loren loren loren loren </p>
+                    <div class="flex flex-row">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                          <path d="M2.89529 6.66717C2.26336 6.66717 1.69366 6.28651 1.45179 5.70271C1.20992 5.1189 1.34352 4.44688 1.79029 3.99998L2.45341 3.33685L2.89529 3.77873L2.23248 4.44154C1.99562 4.67839 1.90312 5.02362 1.98981 5.34717C2.07651 5.67072 2.32923 5.92344 2.65278 6.01014C2.97633 6.09684 3.32156 6.00433 3.55841 5.76748L4.22123 5.10466L4.6631 5.54685L4.00029 6.20966C3.70781 6.50358 3.30993 6.66831 2.89529 6.66717ZM3.11623 5.3256L2.67435 4.88373L4.88404 2.67404L5.32591 3.11591L3.11654 5.32529L3.11623 5.3256ZM5.54716 4.66279L5.10498 4.22091L5.76779 3.5581C6.00787 3.32195 6.10285 2.97518 6.01661 2.64966C5.93038 2.32413 5.67617 2.06987 5.35067 1.98355C5.02516 1.89724 4.67837 1.99214 4.44216 2.23216L3.77904 2.89498L3.33716 2.4531L4.00029 1.78998C4.61125 1.18434 5.59684 1.1865 6.20515 1.7948C6.81345 2.40311 6.81561 3.3887 6.20998 3.99966L5.54716 4.66248V4.66279Z" fill="#516CF7"/>
+                        </svg>
+                      </div>
+                      <a href="#">netlify</a>
+                    </div>
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Educación-->
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center self-stretch">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="162" viewBox="0 0 2 162" fill="none">
+                    <g clip-path="url(#clip0_52_26500)">
+                      <rect x="0.875" y="0.125" width="0.25" height="161.75" stroke="#2E2E48" stroke-width="0.25" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_52_26500">
+                        <rect width="0.5" height="162" fill="white" transform="translate(0.75)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+              </div>
+              <div>
+                <h2>Educación</h2>
+                <div class="flex flex-col items-start gap-1 self-stretch">
+                  <div class="flex items-start gap-1 self-stretch">
+                    <div class="flex flex-col justify-center items-center gap-1 bg-gray/lightest">
+                      <div class="flex flex-row gap-1 self-stretch">
+                        <img src="./img/comercio.png" alt="">
+                        <p>IES COMERCIO</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-start gap-1 self-stretch">
+                        <p>GS DUAL DAW</p>
+                        <p>Sep 2021 - Jun 2024</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-1 bg-gray/lightest">
+                      <div class="flex flex-row gap-1 self-stretch">
+                        <img src="./img/comercio.png" alt="">
+                        <p>IES COMERCIO</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-start gap-1 self-stretch">
+                        <p>GS DUAL DAW</p>
+                        <p>Sep 2021 - Jun 2024</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-1 bg-gray/lightest">
+                      <div class="flex flex-row gap-1 self-stretch">
+                        <img src="./img/comercio.png" alt="">
+                        <p>IES COMERCIO</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-start gap-1 self-stretch">
+                        <p>GS DUAL DAW</p>
+                        <p>Sep 2021 - Jun 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-1 self-stretch">
+                    <div class="flex flex-col justify-center items-center gap-1 bg-gray/lightest">
+                      <div class="flex flex-row gap-1 self-stretch">
+                        <img src="./img/comercio.png" alt="">
+                        <p>IES COMERCIO</p>
+                      </div>
+                      <div class="flex flex-col justify-center items-start gap-1 self-stretch">
+                        <p>GS DUAL DAW</p>
+                        <p>Sep 2021 - Jun 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
