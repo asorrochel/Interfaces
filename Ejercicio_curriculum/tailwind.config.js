@@ -14,6 +14,10 @@ module.exports = {
         'purple': '#9251F7',
         
     },
+    screens: {
+      'xs': '500px',
+      'md': '768px',
+    }
   },
   plugins: [],
   },

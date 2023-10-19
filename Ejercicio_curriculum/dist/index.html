@@ -10,27 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>EJERCICIO CURRICULUM</title>
 </head>
-<body class="w-screen md:bg-gray/lightest flex flex-row justify-center">
-    <div class="md:w-[1000px] w-screen h-auto bg-white md:m-10 flex md:flex-row flex-col justify-center md:border-2 md:border-gray/darker items-start">
+<body class="w-screen lg:bg-gray/lightest flex flex-row justify-center">
+    <div class="lg:w-[1000px] md:w-1/2 w-screen h-auto bg-white lg:m-10 flex md:flex-row flex-col justify-center lg:border-2 lg:border-gray/darker items-start">
         <!-- Lateral -->
         <aside class="flex flex-col justify-center items-center flex-shrink-0 w-full md:w-fit">
-          <div class="m-6">
+          <div class="md:m-6 w-full flex flex-col justify-center items-center">
             <!-- Imagen -->
-            <div class="flex flex-col justify-center self-stretch mb-4">
-              <div class="rounded-full overflow-hidden w-24 h-24 shadow-md border-2 border-gray/darker"> 
-                <img src="img/perfil.png" class="w-24 h-24 object-cover">
+            <div class="flex flex-col justify-center items-center self-stretch mb-4">
+              <div class="rounded-full overflow-hidden w-36 h-36 shadow-md border-2 border-gray/darker my-4"> 
+                <img src="img/perfil.png" class="w-36 h-36 object-cover">
               </div>
             </div>
             <!-- Contenidos -->
             <div>
               <!-- Header-->
-              <div class="flex flex-col justify-center items-start gap-3 self-stretch">
-                  <h1 class="text-gray/darker leading-5 self-stretch font-medium tracking-tight">Adrián Sorroche</h1>
+              <div class="flex flex-col justify-center items-center gap-3 self-stretch">
+                  <h1 class="text-gray/darker leading-5 self-stretch font-medium tracking-tigh text-center">Adrián Sorroche</h1>
                   <h2 class="font-medium leading-4 text-sm tracking-wide bg-gradient-to-r from-purple-400 via-purple-600 to-blue-600 bg-clip-text text-transparent">Software Developer</h2>
               </div>
               <!-- Anotaciones -->
-              <div class="flex flex-col items-start gap-[2px] self-stretch mt-3">
-                <div class="flex items-start gap-[2px] self-stretch">
+              <div class="flex flex-col justify-center items-center gap-[2px] self-stretch mt-3">
+                <div class="flex items-center justify-center gap-[2px] self-stretch">
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                     <path d="M6.82194 4.84222C7.47553 4.84222 7.91671 5.29718 7.91671 5.9712C7.91671 6.57782 7.41017 7.08334 6.7239 7.08334C5.97226 7.08334 5.41671 6.47672 5.41671 5.54994C5.41671 3.44363 6.95265 2.6011 7.91671 2.5L7.91671 3.42678C7.26311 3.54473 6.52782 4.2019 6.49514 4.92647C6.52782 4.90962 6.65854 4.84222 6.82194 4.84222Z" fill="#79819A"/>
                     <path d="M3.4886 4.84222C4.1422 4.84222 4.58337 5.29718 4.58337 5.9712C4.58337 6.57782 4.07684 7.08334 3.39056 7.08334C2.63893 7.08334 2.08337 6.47672 2.08337 5.54994C2.08337 3.44363 3.61932 2.6011 4.58337 2.5V3.42678C3.92978 3.54473 3.19448 4.2019 3.16181 4.92647C3.19448 4.90962 3.3252 4.84222 3.4886 4.84222Z" fill="#79819A"/>
@@ -45,14 +45,16 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex flex-col items-start gap-[2px] self-stretch mt-2" >
+                <div class="flex flex-col items-center gap-[2px] self-stretch mt-2" >
                   <p class="text-[10px] leading-[8px]">Steve Mconell</p>
                 </div>
               </div>
               <!-- Separador -->
               <div class="h-[1px] w-full bg-gray/lightest my-4"></div>
-              <!-- Infos -->
-              <div class="flex flex-col items-start gap-8 self-stretch my-6">
+              <div class="xs:flex xs:flex-row md:flex-col">
+                <!-- Infos -->
+              <div class="flex flex-col items-start gap-8 xs:gap-4 self-stretch md:my-6 p-6 md:bg-white xs:p-0">
+                <h2 class="text-gray/default">Contacto</h2>
                 <!-- Email -->
                 <div class="flex gap-2 self-stretch items-center">
                       <div class="rounded-full bg-gray/lightest flex-shrink-0 p-1 ">
@@ -62,7 +64,7 @@
                       </div>
                       <div class="flex flex-col items-start gap-[2px] ">
                           <h2 class="text-sm text-gray/default ">Email</h2>
-                          <p class="text-gray/darker font-medium leading-[9px] text-sm">asorrochel@protonmail.com</p>
+                          <p class="text-gray/darker font-medium leading-[9px] text-sm">email@email.com</p>
                       </div>
                 </div>
                 <!-- Github -->
@@ -74,7 +76,7 @@
                       </div>
                       <div class="flex flex-col items-start gap-[2px] ">
                           <h2 class="text-sm text-gray/default ">Github</h2>
-                          <p class="text-sm text-gray/darker font-medium leading-[9px]">gtihub.com/asorrochel</p>
+                          <p class="text-sm text-gray/darker font-medium leading-[9px]">github.com/asorrochel</p>
                       </div>
                 </div>
                 <!-- Teléfono -->
@@ -86,7 +88,7 @@
                       </div>
                       <div class="flex flex-col items-start gap-[2px] "> 
                           <h2 class="text-gray/default text-sm ">Teléfono</h2>
-                          <p class="text-gray/darker font-medium leading-[9px] text-sm">(+34) 674 54 07 05</p>
+                          <p class="text-gray/darker font-medium leading-[9px] text-sm">(+34) 123 45 45 78</p>
                       </div>
                 </div>
                 <!-- Localización -->
@@ -98,14 +100,14 @@
                       </div>
                       <div class="flex flex-col items-start gap-[2px] ">
                           <h2 class="text-gray/default text-sm ">Localización</h2>
-                          <p class="text-gray/darker font-medium leading-[9px] text-sm">La Rioja, España</p>
+                          <p class="text-gray/darker font-medium leading-[9px] text-sm">Ubicacion, España</p>
                       </div>
                 </div>
               </div>
               <!-- Separador -->
-              <div class="h-[1px] w-full bg-gray/lightest my-4"></div>
+              <div class="h-[1px] w-full bg-gray/lightest my-4 xs:hidden md:block"></div>
               <!-- Redes -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
+              <div class="flex flex-col items-start gap-3 self-stretch ml-6 md:ml-0">
                   <h2 class="text-gray/default">Redes</h2>
                   <div class="flex gap-2 self-stretch items-center">
                       <div class="rounded-full bg-gray/lightest flex-shrink-0">
@@ -143,9 +145,9 @@
                   </div>
               </div>
               <!-- Separador -->
-              <div class="h-[1px] w-full bg-gray/lightest my-4"></div>
+              <div class="h-[1px] w-full bg-gray/lightest my-4 xs:hidden md:block"></div>
               <!-- Idiomas -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
+              <div class="flex flex-col items-start gap-3 self-stretch ml-6 md:ml-0">
                 <h2 class="text-gray/default">Idiomas</h2>
                 <div class="flex gap-2 self-stretch items-center">
                     <div class="flex-shrink-0 rounded-sm">
@@ -201,6 +203,8 @@
                     </div>
                 </div>
               </div>       
+              </div>
+              
             </div>
           </div>
         </aside>
@@ -224,14 +228,10 @@
                       <!-- Item 1-->
                         <div class="flex flex-row justify-center gap-2 self-stretch items-start">
                           <!-- bola -->
-                          <div class="rounded-full border shadow-md ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                              <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
-                            </svg>
-                          </div>
+                          
                           <!-- Content-->
                           <div class="flex pb-2 pt-[3px]  md:flex-row flex-col justify-center gap-1 self-stretch">
-                                <div class="flex flex-col items-start gap-1 w-1/2">
+                                <div class="flex flex-col items-start gap-1 w-2/3 md:w-1/2">
                                     <div class="flex flex-row gap-[2px] self-stretch items-center">
                                         <p class="text-[10px] text-gray/dark"> Feb 2023 - Jun 2023 (5 meses)</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 6 7" fill="none">
@@ -261,14 +261,10 @@
                       <!-- Item 2-->
                         <div class="flex flex-row justify-center gap-2 self-stretch items-start">
                           <!-- bola -->
-                          <div class="rounded-full border shadow-md ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                              <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
-                            </svg>
-                          </div>
+                         
                           <!-- Content-->
                           <div class="flex pb-2 pt-[3px]  md:flex-row flex-col justify-center gap-1 self-stretch">
-                                <div class="flex flex-col items-start gap-1 w-1/2">
+                                <div class="flex flex-col items-start gap-1  w-2/3 md:w-1/2">
                                     <div class="flex flex-row gap-[2px] self-stretch items-center">
                                         <p class="text-[10px] text-gray/dark"> May 2022 - Jun 2022 (2 meses)</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 6 7" fill="none">
@@ -298,14 +294,10 @@
                       <!-- Item 3-->
                         <div class="flex flex-row justify-center gap-2 self-stretch items-start">
                           <!-- bola -->
-                          <div class="rounded-full border shadow-md ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                              <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
-                            </svg>
-                          </div>
+                          
                           <!-- Content-->
                           <div class="flex pb-2 pt-[3px]  md:flex-row flex-col justify-center gap-1 self-stretch">
-                                <div class="flex flex-col items-start gap-1 w-1/2">
+                                <div class="flex flex-col items-start gap-1  w-2/3 md:w-1/2">
                                     <div class="flex flex-row gap-[2px] self-stretch items-center">
                                         <p class="text-[10px] text-gray/dark"> Mar 2021 - Jun 2021 (2 meses)</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 6 7" fill="none">
@@ -561,3 +553,12 @@
     </div>
 </body>
 </html>
+
+
+<!--
+  <div class="rounded-full border shadow-md ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                              <path d="M4.99996 7.08335C3.84937 7.08335 2.91663 6.15061 2.91663 5.00002C2.91663 3.84943 3.84937 2.91669 4.99996 2.91669C6.15055 2.91669 7.08329 3.84943 7.08329 5.00002C7.08329 6.15061 6.15055 7.08335 4.99996 7.08335Z" fill="#5531A7"/>
+                            </svg>
+                          </div>
+-->
