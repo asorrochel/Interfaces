@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="w-screen">
+    <!-- NAV -->
+    <div class="bg-white shadow-lg w-full">
+      <div class="w-full mx-auto flex justify-between items-center h-20 px-4">
+        <div class="flex items-start">
+          <p class="text-xl md:text-2xl font-semibold uppercase leading-7">
+            ASORROCHE
+          </p>
+        </div>
+        <div class="hidden md:flex gap-4 items-center">
+          <a class="text-gray/text leading-7 text-center" href="#">Inicio</a>
+          <a class="text-gray/text leading-7 text-center" href="#"
+            >Acerca de mí</a
+          >
+          <a class="text-gray/text leading-7 text-center" href="#">Portfolio</a>
+          <a class="text-gray/text leading-7 text-center" href="#">Estudios</a>
+          <a class="text-gray/text leading-7 text-center" href="#">Contacto</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button
+            class="block text-gray/text leading-7 text-center"
+            id="mobile-menu-button"
+          >
+            &#9776;
+            <!-- Icono de hamburguesa Unicode -->
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- HERO -->
+    <div
+      class="bg-gray/background flex w-full p-16 justify-center items-center"
+    >
+      <div class="flex flex-col items-start gap-16">
+        <div class="flex md:flex-row flex-col justify-between items-center">
+          <div class="flex items-end flex-col md:hidden">
+            <img src="img/perfil.png" alt="perfil" />
+          </div>
+          <div class="flex pt-16 flex-col items-start">
+            <div class="flex flex-col gap-4 justify-center items-start">
+              <div class="flex md:flex-row md:items-end flex-col">
+                <p class="font-semibold text-5xl w-1/2">
+                  Full- Stack Developer
+                </p>
+                <img class="w-12 h-12" src="img/mano.png" alt="mano" />
+              </div>
+              <p class="w-3/5">
+                ¡Hola! Soy Adrián, desarrollador full-stack especializado en
+                Vue. Actualmente viviendo en Logroño, La Rioja.
+              </p>
+              <div>
+                <button
+                  class="bg-green/button text-white font-semibold py-2 px-4 rounded-lg"
+                >
+                  Descargar CV
+                </button>
+              </div>
+              <div class="flex flex-row gap-4 items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M18 1.5H5.99687C5.44687 1.5 5 1.95313 5 2.50938V14.4906C5 15.0469 5.44687 15.5 5.99687 15.5H18C18.55 15.5 19 15.0469 19 14.4906V2.50938C19 1.95313 18.55 1.5 18 1.5ZM9.23125 13.5H7.15625V6.81875H9.23438V13.5H9.23125ZM8.19375 5.90625C7.52812 5.90625 6.99063 5.36562 6.99063 4.70312C6.99063 4.04063 7.52812 3.5 8.19375 3.5C8.85625 3.5 9.39687 4.04063 9.39687 4.70312C9.39687 5.36875 8.85938 5.90625 8.19375 5.90625ZM17.0094 13.5H14.9344V10.25C14.9344 9.475 14.9187 8.47813 13.8562 8.47813C12.775 8.47813 12.6094 9.32188 12.6094 10.1938V13.5H10.5344V6.81875H12.525V7.73125H12.5531C12.8312 7.20625 13.5094 6.65312 14.5188 6.65312C16.6187 6.65312 17.0094 8.0375 17.0094 9.8375V13.5Z"
+                    fill="#374151"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M9.43437 12.9187C9.43437 12.9812 9.3625 13.0312 9.27187 13.0312C9.16875 13.0406 9.09688 12.9906 9.09688 12.9187C9.09688 12.8562 9.16875 12.8062 9.25938 12.8062C9.35313 12.7969 9.43437 12.8469 9.43437 12.9187ZM8.4625 12.7781C8.44063 12.8406 8.50313 12.9125 8.59688 12.9312C8.67813 12.9625 8.77187 12.9312 8.79063 12.8687C8.80938 12.8062 8.75 12.7344 8.65625 12.7063C8.575 12.6844 8.48438 12.7156 8.4625 12.7781ZM9.84375 12.725C9.75313 12.7469 9.69062 12.8063 9.7 12.8781C9.70937 12.9406 9.79063 12.9813 9.88438 12.9594C9.975 12.9375 10.0375 12.8781 10.0281 12.8156C10.0187 12.7563 9.93437 12.7156 9.84375 12.725ZM11.9 0.75C7.56563 0.75 4.25 4.04063 4.25 8.375C4.25 11.8406 6.43125 14.8063 9.54688 15.85C9.94688 15.9219 10.0875 15.675 10.0875 15.4719C10.0875 15.2781 10.0781 14.2094 10.0781 13.5531C10.0781 13.5531 7.89062 14.0219 7.43125 12.6219C7.43125 12.6219 7.075 11.7125 6.5625 11.4781C6.5625 11.4781 5.84687 10.9875 6.6125 10.9969C6.6125 10.9969 7.39062 11.0594 7.81875 11.8031C8.50312 13.0094 9.65 12.6625 10.0969 12.4563C10.1688 11.9563 10.3719 11.6094 10.5969 11.4031C8.85 11.2094 7.0875 10.9562 7.0875 7.95C7.0875 7.09062 7.325 6.65938 7.825 6.10938C7.74375 5.90625 7.47813 5.06875 7.90625 3.9875C8.55937 3.78437 10.0625 4.83125 10.0625 4.83125C10.6875 4.65625 11.3594 4.56563 12.025 4.56563C12.6906 4.56563 13.3625 4.65625 13.9875 4.83125C13.9875 4.83125 15.4906 3.78125 16.1438 3.9875C16.5719 5.07188 16.3063 5.90625 16.225 6.10938C16.725 6.6625 17.0312 7.09375 17.0312 7.95C17.0312 10.9656 15.1906 11.2063 13.4438 11.4031C13.7313 11.65 13.975 12.1187 13.975 12.8531C13.975 13.9062 13.9656 15.2094 13.9656 15.4656C13.9656 15.6687 14.1094 15.9156 14.5063 15.8438C17.6313 14.8062 19.75 11.8406 19.75 8.375C19.75 4.04063 16.2344 0.75 11.9 0.75ZM7.2875 11.5281C7.24687 11.5594 7.25625 11.6313 7.30938 11.6906C7.35938 11.7406 7.43125 11.7625 7.47187 11.7219C7.5125 11.6906 7.50312 11.6187 7.45 11.5594C7.4 11.5094 7.32812 11.4875 7.2875 11.5281ZM6.95 11.275C6.92813 11.3156 6.95937 11.3656 7.02187 11.3969C7.07187 11.4281 7.13438 11.4187 7.15625 11.375C7.17812 11.3344 7.14687 11.2844 7.08437 11.2531C7.02187 11.2344 6.97187 11.2437 6.95 11.275ZM7.9625 12.3875C7.9125 12.4281 7.93125 12.5219 8.00312 12.5813C8.075 12.6531 8.16562 12.6625 8.20625 12.6125C8.24688 12.5719 8.22813 12.4781 8.16563 12.4187C8.09688 12.3469 8.00313 12.3375 7.9625 12.3875ZM7.60625 11.9281C7.55625 11.9594 7.55625 12.0406 7.60625 12.1125C7.65625 12.1844 7.74062 12.2156 7.78125 12.1844C7.83125 12.1438 7.83125 12.0625 7.78125 11.9906C7.7375 11.9188 7.65625 11.8875 7.60625 11.9281Z"
+                    fill="#374151"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-end flex-col hidden md:block">
+            <img src="img/perfil.png" alt="perfil" />
+          </div>
+        </div>
+        <div class="flex flex-row items-center gap-11">
+          <p class="text-gray/text">Stack Tecnológico</p>
+          <div class="flex flex-row flex-wrap gap-4 items-start">
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+                width="36"
+                height="36"
+                alt="HTML5 Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-4 rounded-full shadow-md items-center">
+              <img
+                src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
+                width="36"
+                height="36"
+                alt="CSS Powered"
+              />
+            </div>
+            <div class="flex p-5 rounded-full shadow-md items-center">
+              <p
+                class="w-8 h-8 text-gray/text flex justify-center items-center"
+              >
+                más
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ACERCA DE MI -->
+    <div class="flex w-full m-10 md:m-0 p-16 justify-center items-center">
+      <div class="flex items-start flex-col-reverse lg:flex-row gap-16">
+        <img
+          src="img/acerca.png"
+          alt="acerca"
+          class="max-w-lg self-stretch rounded-sm"
+        />
+        <div
+          class="flex flex-col w-full lg:w-96 gap-2 items-start self-stretch"
+        >
+          <h2 class="font-semibold text-green/h2 uppercase">Acerca de mí</h2>
+          <p class="text-gray/text leading-6">
+            Soy un apasionado diseñador web y programador. Mi objetivo es crear
+            sitios web atractivos y funcionales que brinden una experiencia de
+            usuario excepcional. Me especializo en HTML, CSS, JavaScript y otras
+            tecnologías web modernas.
+          </p>
+          <p class="text-gray/text leading-6">
+            Además de mi amor por la programación, también me encanta la
+            escalada. Siempre estoy buscando nuevas formas de combinar mis
+            habilidades técnicas con mi pasión por la escalada. ¡Espero poder
+            trabajar contigo en tu próximo proyecto!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div
+      class="flex flex-col items-center p-16 justify-center bg-gray/background"
+    >
+      <div class="flex flex-col items-start gap-4">
+        <div class="flex flex-col items-start self-stretch">
+          <h2 class="font-semibold text-green/h2 uppercase">Portfolio</h2>
+          <h3 class="font-bold text-gray/text uppercase">
+            Algunos de mis proyectos personales
+          </h3>
+        </div>
+        <div class="flex flex-col items-start gap-12 self-stretch">
+          <!-- ROW 1-->
+          <div
+            class="flex flex-col md:flex-row gap-12 items-center self-stretch"
+          >
+            <div
+              class="flex p-8 flex-col justify-center gap-4 shadow-md rounded-sm"
+            >
+              <img src="img/kata.png" alt="pr1" />
+              <div class="w-full h-[2px] bg-separador"></div>
+              <div class="flex flex-row gap-4 self-stretch">
+                <h2 class="underline text-xl font-semibold text-gray/text">
+                  KataPelis
+                </h2>
+                <button
+                  class="border-green/button text-green/button border rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Código</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.78499 10.8664C5.78499 10.9211 5.72209 10.9648 5.6428 10.9648C5.55256 10.973 5.48967 10.9293 5.48967 10.8664C5.48967 10.8117 5.55256 10.768 5.63186 10.768C5.71389 10.7598 5.78499 10.8035 5.78499 10.8664ZM4.93459 10.7434C4.91545 10.798 4.97014 10.8609 5.05217 10.8773C5.12327 10.9047 5.2053 10.8773 5.2217 10.8227C5.23811 10.768 5.18616 10.7051 5.10413 10.6805C5.03303 10.6613 4.95374 10.6887 4.93459 10.7434ZM6.14319 10.6969C6.06389 10.716 6.0092 10.768 6.01741 10.8309C6.02561 10.8855 6.0967 10.9211 6.17874 10.902C6.25803 10.8828 6.31272 10.8309 6.30452 10.7762C6.29631 10.7242 6.22249 10.6887 6.14319 10.6969ZM7.94241 0.21875C4.14983 0.21875 1.24866 3.09805 1.24866 6.89062C1.24866 9.92305 3.15725 12.518 5.88342 13.4313C6.23342 13.4941 6.35647 13.2781 6.35647 13.1004C6.35647 12.9309 6.34827 11.9957 6.34827 11.4215C6.34827 11.4215 4.4342 11.8316 4.03225 10.6066C4.03225 10.6066 3.72053 9.81094 3.27209 9.60586C3.27209 9.60586 2.64592 9.17656 3.31584 9.18477C3.31584 9.18477 3.9967 9.23945 4.37131 9.89023C4.97014 10.9457 5.97366 10.6422 6.36467 10.4617C6.42756 10.0242 6.6053 9.7207 6.80217 9.54023C5.27366 9.3707 3.73147 9.14922 3.73147 6.51875C3.73147 5.7668 3.93928 5.38945 4.37678 4.9082C4.30569 4.73047 4.07327 3.99766 4.44788 3.05156C5.01936 2.87383 6.33459 3.78984 6.33459 3.78984C6.88147 3.63672 7.46936 3.55742 8.05178 3.55742C8.6342 3.55742 9.2221 3.63672 9.76897 3.78984C9.76897 3.78984 11.0842 2.87109 11.6557 3.05156C12.0303 4.00039 11.7979 4.73047 11.7268 4.9082C12.1643 5.39219 12.4323 5.76953 12.4323 6.51875C12.4323 9.15742 10.8217 9.36797 9.29319 9.54023C9.54475 9.75625 9.75803 10.1664 9.75803 10.809C9.75803 11.7305 9.74983 12.8707 9.74983 13.0949C9.74983 13.2727 9.87561 13.4887 10.2229 13.4258C12.9573 12.518 14.8112 9.92305 14.8112 6.89062C14.8112 3.09805 11.735 0.21875 7.94241 0.21875ZM3.90647 9.64961C3.87092 9.67695 3.87913 9.73984 3.92561 9.7918C3.96936 9.83555 4.03225 9.85469 4.0678 9.81914C4.10334 9.7918 4.09514 9.72891 4.04866 9.67695C4.00491 9.6332 3.94202 9.61406 3.90647 9.64961ZM3.61116 9.42812C3.59202 9.46367 3.61936 9.50742 3.67405 9.53477C3.7178 9.56211 3.77249 9.55391 3.79163 9.51562C3.81077 9.48008 3.78342 9.43633 3.72874 9.40898C3.67405 9.39258 3.6303 9.40078 3.61116 9.42812ZM4.49709 10.4016C4.45334 10.4371 4.46975 10.5191 4.53264 10.5711C4.59553 10.634 4.67483 10.6422 4.71038 10.5984C4.74592 10.5629 4.72952 10.4809 4.67483 10.4289C4.61467 10.366 4.53264 10.3578 4.49709 10.4016ZM4.18538 9.99961C4.14163 10.027 4.14163 10.098 4.18538 10.1609C4.22913 10.2238 4.30295 10.2512 4.3385 10.2238C4.38225 10.1883 4.38225 10.1172 4.3385 10.0543C4.30022 9.99141 4.22913 9.96406 4.18538 9.99961Z"
+                      fill="#064E3B"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="bg-green/button text-white rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Demo</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.97002 0.875C6.76064 0.875 4.9915 1.88125 3.70361 3.07891C2.42393 4.26562 1.56807 5.6875 1.16338 6.66367C1.07314 6.87969 1.07314 7.12031 1.16338 7.33633C1.56807 8.3125 2.42393 9.73438 3.70361 10.9211C4.9915 12.1187 6.76064 13.125 8.97002 13.125C11.1794 13.125 12.9485 12.1187 14.2364 10.9211C15.5161 9.73164 16.372 8.3125 16.7794 7.33633C16.8696 7.12031 16.8696 6.87969 16.7794 6.66367C16.372 5.6875 15.5161 4.26562 14.2364 3.07891C12.9485 1.88125 11.1794 0.875 8.97002 0.875ZM5.03252 7C5.03252 5.95571 5.44736 4.95419 6.18579 4.21577C6.92421 3.47734 7.92573 3.0625 8.97002 3.0625C10.0143 3.0625 11.0158 3.47734 11.7543 4.21577C12.4927 4.95419 12.9075 5.95571 12.9075 7C12.9075 8.04429 12.4927 9.04581 11.7543 9.78423C11.0158 10.5227 10.0143 10.9375 8.97002 10.9375C7.92573 10.9375 6.92421 10.5227 6.18579 9.78423C5.44736 9.04581 5.03252 8.04429 5.03252 7ZM8.97002 5.25C8.97002 6.21523 8.18525 7 7.22002 7C7.02588 7 6.83994 6.96719 6.66494 6.90977C6.51455 6.86055 6.33955 6.95352 6.34502 7.11211C6.35322 7.30078 6.38057 7.48945 6.43252 7.67812C6.80713 9.07812 8.24814 9.90938 9.64814 9.53477C11.0481 9.16016 11.8794 7.71914 11.5048 6.31914C11.2013 5.18438 10.1978 4.42148 9.08213 4.375C8.92354 4.36953 8.83057 4.5418 8.87979 4.69492C8.93721 4.86992 8.97002 5.05586 8.97002 5.25Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex p-8 flex-col justify-center gap-4 shadow-md rounded-sm"
+            >
+              <img src="img/blockbuddy.png" alt="pr1" />
+              <div class="w-full h-[2px] bg-separador"></div>
+              <div class="flex flex-row gap-4 self-stretch">
+                <h2 class="underline text-xl font-semibold text-gray/text">
+                  BlockBuddy
+                </h2>
+                <button
+                  class="border-green/button text-green/button border rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Código</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.78499 10.8664C5.78499 10.9211 5.72209 10.9648 5.6428 10.9648C5.55256 10.973 5.48967 10.9293 5.48967 10.8664C5.48967 10.8117 5.55256 10.768 5.63186 10.768C5.71389 10.7598 5.78499 10.8035 5.78499 10.8664ZM4.93459 10.7434C4.91545 10.798 4.97014 10.8609 5.05217 10.8773C5.12327 10.9047 5.2053 10.8773 5.2217 10.8227C5.23811 10.768 5.18616 10.7051 5.10413 10.6805C5.03303 10.6613 4.95374 10.6887 4.93459 10.7434ZM6.14319 10.6969C6.06389 10.716 6.0092 10.768 6.01741 10.8309C6.02561 10.8855 6.0967 10.9211 6.17874 10.902C6.25803 10.8828 6.31272 10.8309 6.30452 10.7762C6.29631 10.7242 6.22249 10.6887 6.14319 10.6969ZM7.94241 0.21875C4.14983 0.21875 1.24866 3.09805 1.24866 6.89062C1.24866 9.92305 3.15725 12.518 5.88342 13.4313C6.23342 13.4941 6.35647 13.2781 6.35647 13.1004C6.35647 12.9309 6.34827 11.9957 6.34827 11.4215C6.34827 11.4215 4.4342 11.8316 4.03225 10.6066C4.03225 10.6066 3.72053 9.81094 3.27209 9.60586C3.27209 9.60586 2.64592 9.17656 3.31584 9.18477C3.31584 9.18477 3.9967 9.23945 4.37131 9.89023C4.97014 10.9457 5.97366 10.6422 6.36467 10.4617C6.42756 10.0242 6.6053 9.7207 6.80217 9.54023C5.27366 9.3707 3.73147 9.14922 3.73147 6.51875C3.73147 5.7668 3.93928 5.38945 4.37678 4.9082C4.30569 4.73047 4.07327 3.99766 4.44788 3.05156C5.01936 2.87383 6.33459 3.78984 6.33459 3.78984C6.88147 3.63672 7.46936 3.55742 8.05178 3.55742C8.6342 3.55742 9.2221 3.63672 9.76897 3.78984C9.76897 3.78984 11.0842 2.87109 11.6557 3.05156C12.0303 4.00039 11.7979 4.73047 11.7268 4.9082C12.1643 5.39219 12.4323 5.76953 12.4323 6.51875C12.4323 9.15742 10.8217 9.36797 9.29319 9.54023C9.54475 9.75625 9.75803 10.1664 9.75803 10.809C9.75803 11.7305 9.74983 12.8707 9.74983 13.0949C9.74983 13.2727 9.87561 13.4887 10.2229 13.4258C12.9573 12.518 14.8112 9.92305 14.8112 6.89062C14.8112 3.09805 11.735 0.21875 7.94241 0.21875ZM3.90647 9.64961C3.87092 9.67695 3.87913 9.73984 3.92561 9.7918C3.96936 9.83555 4.03225 9.85469 4.0678 9.81914C4.10334 9.7918 4.09514 9.72891 4.04866 9.67695C4.00491 9.6332 3.94202 9.61406 3.90647 9.64961ZM3.61116 9.42812C3.59202 9.46367 3.61936 9.50742 3.67405 9.53477C3.7178 9.56211 3.77249 9.55391 3.79163 9.51562C3.81077 9.48008 3.78342 9.43633 3.72874 9.40898C3.67405 9.39258 3.6303 9.40078 3.61116 9.42812ZM4.49709 10.4016C4.45334 10.4371 4.46975 10.5191 4.53264 10.5711C4.59553 10.634 4.67483 10.6422 4.71038 10.5984C4.74592 10.5629 4.72952 10.4809 4.67483 10.4289C4.61467 10.366 4.53264 10.3578 4.49709 10.4016ZM4.18538 9.99961C4.14163 10.027 4.14163 10.098 4.18538 10.1609C4.22913 10.2238 4.30295 10.2512 4.3385 10.2238C4.38225 10.1883 4.38225 10.1172 4.3385 10.0543C4.30022 9.99141 4.22913 9.96406 4.18538 9.99961Z"
+                      fill="#064E3B"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="bg-green/button text-white rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Demo</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.97002 0.875C6.76064 0.875 4.9915 1.88125 3.70361 3.07891C2.42393 4.26562 1.56807 5.6875 1.16338 6.66367C1.07314 6.87969 1.07314 7.12031 1.16338 7.33633C1.56807 8.3125 2.42393 9.73438 3.70361 10.9211C4.9915 12.1187 6.76064 13.125 8.97002 13.125C11.1794 13.125 12.9485 12.1187 14.2364 10.9211C15.5161 9.73164 16.372 8.3125 16.7794 7.33633C16.8696 7.12031 16.8696 6.87969 16.7794 6.66367C16.372 5.6875 15.5161 4.26562 14.2364 3.07891C12.9485 1.88125 11.1794 0.875 8.97002 0.875ZM5.03252 7C5.03252 5.95571 5.44736 4.95419 6.18579 4.21577C6.92421 3.47734 7.92573 3.0625 8.97002 3.0625C10.0143 3.0625 11.0158 3.47734 11.7543 4.21577C12.4927 4.95419 12.9075 5.95571 12.9075 7C12.9075 8.04429 12.4927 9.04581 11.7543 9.78423C11.0158 10.5227 10.0143 10.9375 8.97002 10.9375C7.92573 10.9375 6.92421 10.5227 6.18579 9.78423C5.44736 9.04581 5.03252 8.04429 5.03252 7ZM8.97002 5.25C8.97002 6.21523 8.18525 7 7.22002 7C7.02588 7 6.83994 6.96719 6.66494 6.90977C6.51455 6.86055 6.33955 6.95352 6.34502 7.11211C6.35322 7.30078 6.38057 7.48945 6.43252 7.67812C6.80713 9.07812 8.24814 9.90938 9.64814 9.53477C11.0481 9.16016 11.8794 7.71914 11.5048 6.31914C11.2013 5.18438 10.1978 4.42148 9.08213 4.375C8.92354 4.36953 8.83057 4.5418 8.87979 4.69492C8.93721 4.86992 8.97002 5.05586 8.97002 5.25Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 2-->
+          <div
+            class="flex p-8 flex-col md:flex-row justify-center gap-4 shadow-md rounded-sm"
+          >
+            <img
+              src="img/SGI.png"
+              alt="pr1"
+              class="rounded-md md:w-72 md:h-72 w-full"
+            />
+            <div class="flex flex-col w-full md:w-[530px] gap-4 self-stretch">
+              <h2 class="underline text-xl font-semibold text-gray/text">
+                SGI
+              </h2>
+              <p>
+                Proyecto de desarrollo de un sistema de gestión de incidencias,
+                con el objetivo de mejorar la comunicación entre los usuarios y
+                el departamento de sistemas del instituto.
+              </p>
+              <p>
+                El sistema permite a los usuarios reportar incidencias, y al
+                departamento de sistemas gestionarlas y darles seguimiento.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Android</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">.Net</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Rest Api</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Material UI</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Firebase</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">MySQL</p>
+                </div>
+              </div>
+              <div class="w-full h-[2px] bg-separador"></div>
+              <div class="flex flex-row gap-2 items-start justify-center">
+                <button
+                  class="border-green/button text-green/button border rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Código</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.78499 10.8664C5.78499 10.9211 5.72209 10.9648 5.6428 10.9648C5.55256 10.973 5.48967 10.9293 5.48967 10.8664C5.48967 10.8117 5.55256 10.768 5.63186 10.768C5.71389 10.7598 5.78499 10.8035 5.78499 10.8664ZM4.93459 10.7434C4.91545 10.798 4.97014 10.8609 5.05217 10.8773C5.12327 10.9047 5.2053 10.8773 5.2217 10.8227C5.23811 10.768 5.18616 10.7051 5.10413 10.6805C5.03303 10.6613 4.95374 10.6887 4.93459 10.7434ZM6.14319 10.6969C6.06389 10.716 6.0092 10.768 6.01741 10.8309C6.02561 10.8855 6.0967 10.9211 6.17874 10.902C6.25803 10.8828 6.31272 10.8309 6.30452 10.7762C6.29631 10.7242 6.22249 10.6887 6.14319 10.6969ZM7.94241 0.21875C4.14983 0.21875 1.24866 3.09805 1.24866 6.89062C1.24866 9.92305 3.15725 12.518 5.88342 13.4313C6.23342 13.4941 6.35647 13.2781 6.35647 13.1004C6.35647 12.9309 6.34827 11.9957 6.34827 11.4215C6.34827 11.4215 4.4342 11.8316 4.03225 10.6066C4.03225 10.6066 3.72053 9.81094 3.27209 9.60586C3.27209 9.60586 2.64592 9.17656 3.31584 9.18477C3.31584 9.18477 3.9967 9.23945 4.37131 9.89023C4.97014 10.9457 5.97366 10.6422 6.36467 10.4617C6.42756 10.0242 6.6053 9.7207 6.80217 9.54023C5.27366 9.3707 3.73147 9.14922 3.73147 6.51875C3.73147 5.7668 3.93928 5.38945 4.37678 4.9082C4.30569 4.73047 4.07327 3.99766 4.44788 3.05156C5.01936 2.87383 6.33459 3.78984 6.33459 3.78984C6.88147 3.63672 7.46936 3.55742 8.05178 3.55742C8.6342 3.55742 9.2221 3.63672 9.76897 3.78984C9.76897 3.78984 11.0842 2.87109 11.6557 3.05156C12.0303 4.00039 11.7979 4.73047 11.7268 4.9082C12.1643 5.39219 12.4323 5.76953 12.4323 6.51875C12.4323 9.15742 10.8217 9.36797 9.29319 9.54023C9.54475 9.75625 9.75803 10.1664 9.75803 10.809C9.75803 11.7305 9.74983 12.8707 9.74983 13.0949C9.74983 13.2727 9.87561 13.4887 10.2229 13.4258C12.9573 12.518 14.8112 9.92305 14.8112 6.89062C14.8112 3.09805 11.735 0.21875 7.94241 0.21875ZM3.90647 9.64961C3.87092 9.67695 3.87913 9.73984 3.92561 9.7918C3.96936 9.83555 4.03225 9.85469 4.0678 9.81914C4.10334 9.7918 4.09514 9.72891 4.04866 9.67695C4.00491 9.6332 3.94202 9.61406 3.90647 9.64961ZM3.61116 9.42812C3.59202 9.46367 3.61936 9.50742 3.67405 9.53477C3.7178 9.56211 3.77249 9.55391 3.79163 9.51562C3.81077 9.48008 3.78342 9.43633 3.72874 9.40898C3.67405 9.39258 3.6303 9.40078 3.61116 9.42812ZM4.49709 10.4016C4.45334 10.4371 4.46975 10.5191 4.53264 10.5711C4.59553 10.634 4.67483 10.6422 4.71038 10.5984C4.74592 10.5629 4.72952 10.4809 4.67483 10.4289C4.61467 10.366 4.53264 10.3578 4.49709 10.4016ZM4.18538 9.99961C4.14163 10.027 4.14163 10.098 4.18538 10.1609C4.22913 10.2238 4.30295 10.2512 4.3385 10.2238C4.38225 10.1883 4.38225 10.1172 4.3385 10.0543C4.30022 9.99141 4.22913 9.96406 4.18538 9.99961Z"
+                      fill="#064E3B"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="bg-green/button text-white rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Demo</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.97002 0.875C6.76064 0.875 4.9915 1.88125 3.70361 3.07891C2.42393 4.26562 1.56807 5.6875 1.16338 6.66367C1.07314 6.87969 1.07314 7.12031 1.16338 7.33633C1.56807 8.3125 2.42393 9.73438 3.70361 10.9211C4.9915 12.1187 6.76064 13.125 8.97002 13.125C11.1794 13.125 12.9485 12.1187 14.2364 10.9211C15.5161 9.73164 16.372 8.3125 16.7794 7.33633C16.8696 7.12031 16.8696 6.87969 16.7794 6.66367C16.372 5.6875 15.5161 4.26562 14.2364 3.07891C12.9485 1.88125 11.1794 0.875 8.97002 0.875ZM5.03252 7C5.03252 5.95571 5.44736 4.95419 6.18579 4.21577C6.92421 3.47734 7.92573 3.0625 8.97002 3.0625C10.0143 3.0625 11.0158 3.47734 11.7543 4.21577C12.4927 4.95419 12.9075 5.95571 12.9075 7C12.9075 8.04429 12.4927 9.04581 11.7543 9.78423C11.0158 10.5227 10.0143 10.9375 8.97002 10.9375C7.92573 10.9375 6.92421 10.5227 6.18579 9.78423C5.44736 9.04581 5.03252 8.04429 5.03252 7ZM8.97002 5.25C8.97002 6.21523 8.18525 7 7.22002 7C7.02588 7 6.83994 6.96719 6.66494 6.90977C6.51455 6.86055 6.33955 6.95352 6.34502 7.11211C6.35322 7.30078 6.38057 7.48945 6.43252 7.67812C6.80713 9.07812 8.24814 9.90938 9.64814 9.53477C11.0481 9.16016 11.8794 7.71914 11.5048 6.31914C11.2013 5.18438 10.1978 4.42148 9.08213 4.375C8.92354 4.36953 8.83057 4.5418 8.87979 4.69492C8.93721 4.86992 8.97002 5.05586 8.97002 5.25Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ROW 3-->
+          <div
+            class="flex p-8 flex-col md:flex-row justify-center gap-4 shadow-md rounded-sm"
+          >
+            <div class="flex flex-col w-full md:w-[530px] gap-4 self-stretch">
+              <h2 class="underline text-xl font-semibold text-gray/text">
+                west_world_adventures
+              </h2>
+              <p>
+                Proyecto personal desarrollado a modo de blog de historias de un
+                videojuego
+              </p>
+              <p>
+                Nos permite añadir aventuras a medida que se va desarrollando la
+                historia de nuestro personaje
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Vue JS</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Node.js</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Vercel</p>
+                </div>
+                <div class="inline-flex flex-col p-2 rounded-lg bg-gray/button">
+                  <p class="text-white">Tailwind CSS</p>
+                </div>
+              </div>
+              <div class="w-full h-[2px] bg-separador"></div>
+              <div class="flex flex-row gap-2 items-start justify-center">
+                <button
+                  class="border-green/button text-green/button border rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Código</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.78499 10.8664C5.78499 10.9211 5.72209 10.9648 5.6428 10.9648C5.55256 10.973 5.48967 10.9293 5.48967 10.8664C5.48967 10.8117 5.55256 10.768 5.63186 10.768C5.71389 10.7598 5.78499 10.8035 5.78499 10.8664ZM4.93459 10.7434C4.91545 10.798 4.97014 10.8609 5.05217 10.8773C5.12327 10.9047 5.2053 10.8773 5.2217 10.8227C5.23811 10.768 5.18616 10.7051 5.10413 10.6805C5.03303 10.6613 4.95374 10.6887 4.93459 10.7434ZM6.14319 10.6969C6.06389 10.716 6.0092 10.768 6.01741 10.8309C6.02561 10.8855 6.0967 10.9211 6.17874 10.902C6.25803 10.8828 6.31272 10.8309 6.30452 10.7762C6.29631 10.7242 6.22249 10.6887 6.14319 10.6969ZM7.94241 0.21875C4.14983 0.21875 1.24866 3.09805 1.24866 6.89062C1.24866 9.92305 3.15725 12.518 5.88342 13.4313C6.23342 13.4941 6.35647 13.2781 6.35647 13.1004C6.35647 12.9309 6.34827 11.9957 6.34827 11.4215C6.34827 11.4215 4.4342 11.8316 4.03225 10.6066C4.03225 10.6066 3.72053 9.81094 3.27209 9.60586C3.27209 9.60586 2.64592 9.17656 3.31584 9.18477C3.31584 9.18477 3.9967 9.23945 4.37131 9.89023C4.97014 10.9457 5.97366 10.6422 6.36467 10.4617C6.42756 10.0242 6.6053 9.7207 6.80217 9.54023C5.27366 9.3707 3.73147 9.14922 3.73147 6.51875C3.73147 5.7668 3.93928 5.38945 4.37678 4.9082C4.30569 4.73047 4.07327 3.99766 4.44788 3.05156C5.01936 2.87383 6.33459 3.78984 6.33459 3.78984C6.88147 3.63672 7.46936 3.55742 8.05178 3.55742C8.6342 3.55742 9.2221 3.63672 9.76897 3.78984C9.76897 3.78984 11.0842 2.87109 11.6557 3.05156C12.0303 4.00039 11.7979 4.73047 11.7268 4.9082C12.1643 5.39219 12.4323 5.76953 12.4323 6.51875C12.4323 9.15742 10.8217 9.36797 9.29319 9.54023C9.54475 9.75625 9.75803 10.1664 9.75803 10.809C9.75803 11.7305 9.74983 12.8707 9.74983 13.0949C9.74983 13.2727 9.87561 13.4887 10.2229 13.4258C12.9573 12.518 14.8112 9.92305 14.8112 6.89062C14.8112 3.09805 11.735 0.21875 7.94241 0.21875ZM3.90647 9.64961C3.87092 9.67695 3.87913 9.73984 3.92561 9.7918C3.96936 9.83555 4.03225 9.85469 4.0678 9.81914C4.10334 9.7918 4.09514 9.72891 4.04866 9.67695C4.00491 9.6332 3.94202 9.61406 3.90647 9.64961ZM3.61116 9.42812C3.59202 9.46367 3.61936 9.50742 3.67405 9.53477C3.7178 9.56211 3.77249 9.55391 3.79163 9.51562C3.81077 9.48008 3.78342 9.43633 3.72874 9.40898C3.67405 9.39258 3.6303 9.40078 3.61116 9.42812ZM4.49709 10.4016C4.45334 10.4371 4.46975 10.5191 4.53264 10.5711C4.59553 10.634 4.67483 10.6422 4.71038 10.5984C4.74592 10.5629 4.72952 10.4809 4.67483 10.4289C4.61467 10.366 4.53264 10.3578 4.49709 10.4016ZM4.18538 9.99961C4.14163 10.027 4.14163 10.098 4.18538 10.1609C4.22913 10.2238 4.30295 10.2512 4.3385 10.2238C4.38225 10.1883 4.38225 10.1172 4.3385 10.0543C4.30022 9.99141 4.22913 9.96406 4.18538 9.99961Z"
+                      fill="#064E3B"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="bg-green/button text-white rounded-md flex flex-row items-center gap-4 px-4 py-2"
+                >
+                  <p>Demo</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.97002 0.875C6.76064 0.875 4.9915 1.88125 3.70361 3.07891C2.42393 4.26562 1.56807 5.6875 1.16338 6.66367C1.07314 6.87969 1.07314 7.12031 1.16338 7.33633C1.56807 8.3125 2.42393 9.73438 3.70361 10.9211C4.9915 12.1187 6.76064 13.125 8.97002 13.125C11.1794 13.125 12.9485 12.1187 14.2364 10.9211C15.5161 9.73164 16.372 8.3125 16.7794 7.33633C16.8696 7.12031 16.8696 6.87969 16.7794 6.66367C16.372 5.6875 15.5161 4.26562 14.2364 3.07891C12.9485 1.88125 11.1794 0.875 8.97002 0.875ZM5.03252 7C5.03252 5.95571 5.44736 4.95419 6.18579 4.21577C6.92421 3.47734 7.92573 3.0625 8.97002 3.0625C10.0143 3.0625 11.0158 3.47734 11.7543 4.21577C12.4927 4.95419 12.9075 5.95571 12.9075 7C12.9075 8.04429 12.4927 9.04581 11.7543 9.78423C11.0158 10.5227 10.0143 10.9375 8.97002 10.9375C7.92573 10.9375 6.92421 10.5227 6.18579 9.78423C5.44736 9.04581 5.03252 8.04429 5.03252 7ZM8.97002 5.25C8.97002 6.21523 8.18525 7 7.22002 7C7.02588 7 6.83994 6.96719 6.66494 6.90977C6.51455 6.86055 6.33955 6.95352 6.34502 7.11211C6.35322 7.30078 6.38057 7.48945 6.43252 7.67812C6.80713 9.07812 8.24814 9.90938 9.64814 9.53477C11.0481 9.16016 11.8794 7.71914 11.5048 6.31914C11.2013 5.18438 10.1978 4.42148 9.08213 4.375C8.92354 4.36953 8.83057 4.5418 8.87979 4.69492C8.93721 4.86992 8.97002 5.05586 8.97002 5.25Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <img
+              src="img/west.jpg"
+              class="rounded-md w-full md:w-72 md:h-72"
+              alt="pr1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Estudios -->
+    <div class="py-16 w-full">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold text-green-600 uppercase">
+            Estudios
+          </h2>
+          <h3 class="text-lg font-semibold text-gray-700 uppercase">
+            Mi historial académico
+          </h3>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between mt-8">
+          <!--  1 -->
+          <div class="mb-6 lg:mb-0">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green/h2">
+                Bachillerato Ciencias
+              </h3>
+              <p class="text-gray-600">IES Cosme Garcia</p>
+              <p class="text-gray-600">2017 - 2019</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="mb-6 lg:mb-0">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green/h2">
+                Grado Medio SMRV
+              </h3>
+              <p class="text-gray-600">IES Cosme</p>
+              <p class="text-gray-600">2019 - 2021</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="mb-6 lg:mb-0">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green/h2">
+                Grado Superior DAM DUAL
+              </h3>
+              <p class="text-gray-600">IES Comercio</p>
+              <p class="text-gray-600">2021 - 2023</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="mb-6 lg:mb-0">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green/h2">
+                Grado Superior DAW DUAL
+              </h3>
+              <p class="text-gray-600">IES Comercio</p>
+              <p class="text-gray-600">2021 - 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contacto -->
+    <div class="bg-gray/background py-16 w-full">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold text-green-600 uppercase">
+            Contacto
+          </h2>
+          <h3 class="text-lg font-semibold text-gray-700 uppercase">
+            ¡Hablemos!
+          </h3>
+        </div>
+        <div class="flex flex-wrap justify-center mt-8">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-3xl text-text-green/h2 mb-2">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4 class="text-lg font-semibold text-green/h2">Email</h4>
+              <p class="text-gray/text">tuemail@example.com</p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-3xl text-text-green/h2 mb-2">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4 class="text-lg font-semibold text-green/h2">Teléfono</h4>
+              <p class="text-gray/text">(+34) 123 45 45 45</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
