@@ -1,0 +1,21 @@
+#derechaAbajo {
+  margin-left: -60px;
+}
+
+#derechaArriba {
+  margin-left: -60px;
+  margin-bottom: -50px;
+}
+
+.row1 {
+  margin-bottom: -60px;
+}
+
+img {
+  opacity: 0.2;
+  transition: all 1s ease-in-out;
+}
+
+img:hover {
+  opacity: 1;
+}

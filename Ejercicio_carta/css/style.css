@@ -1,0 +1,51 @@
+.baraja {
+  width: 2.5in;
+  height: 3.5in;
+  position: relative;
+  perspective: 1000px;
+  margin: 50px auto 0;
+}
+
+.carta {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.carta  div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reverso, .anverso {
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.carta .reverso {
+  background: url('../img/delante.jpg') center/contain no-repeat;
+  z-index: 10;
+}
+
+.carta .anverso {
+  background: url('../img/detras.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+
+.carta:hover  div {
+  transform: rotateY(180deg);
+}
+
+.carta:hover .anverso {
+  transform: rotateY(-180deg);
+  z-index: 10;
+}
+
+.carta:hover .reverso {
+  z-index: 0;
+}

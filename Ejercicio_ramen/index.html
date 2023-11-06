@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .cocina {
+            position: relative;
+        }
+
+        .ramen img {
+            position: absolute;
+        }
+
+        #ramenCO, #ramenLL, #ramenCH {
+            opacity: 0;
+        }
+
+        .ramen:hover #ramenCO {
+            transition: opacity 1s;
+            opacity: 1;
+        }
+
+        .ramen:hover #ramenSI {
+            transition: opacity 1s;
+            opacity: 0;
+        }
+
+        .ramen:hover #ramenLL {
+            opacity: 1;
+            transition-delay: 5s;
+        }
+
+        .ramen:hover #ramenCH {
+            opacity: 1;
+            transition-delay: 15s;
+        }
+
+        .hoguera {
+            position: absolute;
+            top: 350px;
+            left: 25px;
+        }
+
+        .fuego {
+            position: absolute;
+            top: 150px;
+            left: 0;
+        }
+
+        .fuego img {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .hoguera:hover + .fuego img {
+            opacity: 1;
+        }
+    </style>
+    <title>Ramen</title>
+</head>
+<body>
+    <div class="cocina">
+        <div class="ramen">
+            <img src="img/ramen_sin_cocinar.png" id="ramenSI" />
+            <img src="img/ramen_cocinando.png" id="ramenCO" />
+            <img src="img/ramen_lleno.png" id="ramenLL" />
+            <img src="img/ramen_chumasquina.png" id="ramenCH" />
+        </div>
+        <div class="hoguera">
+            <img src="img/hoguera_apagada.png" id="hoguera" />
+        </div>
+        <div class="fuego">
+            <img src="img/fuego.png" id="hoguera_fuego" />
+        </div>
+    </div>
+</body>
+</html>
