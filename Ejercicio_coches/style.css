@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.contenido {
+  width: 600px;
+  height: 200px;
+  position: relative;
+}
+
+.persona {
+  position: absolute;
+  width: 200px;
+  bottom: -200px;
+  right: -100px;
+  animation-delay: 5s;
+  animation: convertirHulk 1s linear forwards;
+}
+
+.brazo {
+  width: 50px;
+  position: absolute;
+  bottom: -120px;
+  right: 40px;
+  animation-delay: 3s;
+  opacity: 0;
+  animation: mover-brazo 1s linear forwards;
+}
+
+.coche {
+  width: 300px;
+  position: absolute;
+  bottom: -200px;
+  right: 474px;
+  transform: rotateY(180deg);
+  animation: mover-coche 1s linear forwards, volar-coche 1s linear forwards 1s;
+}
+
+@keyframes mover-coche {
+  0% {
+    right: 474px;
+    transform: rotateY(180deg);
+  }
+  90% {
+    right: 80px;
+    transform: rotateY(180deg);
+  }
+  100% {
+    right: 70px;
+    transform: rotateY(127deg);
+  }
+}
+
+@keyframes mover-brazo {
+  0% {
+    opacity: 0;
+
+    transform: rotateZ(0deg);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(30deg);
+    bottom: -100px;  }
+  
+}
+
+@keyframes convertirHulk {
+  0% {
+    opacity: 0;
+    content: url("persona.png");
+  }
+  100% {
+    opacity: 1;
+    content: url("hulk.png");
+  }
+}
+
+@keyframes volar-coche {
+  0% {
+    right: 70px;
+            transform:  rotateZ(0deg);
+            bottom: 50px;
+  }
+  100% {
+    right: 1000px;
+            transform: rotateZ(1000deg);
+            transform-origin: 500px;
+            bottom: 1000px;
+  }
+  
+}

@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(river.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#gondola {
+  height: 400px;
+  position: fixed;
+  left: 0vw;
+  bottom:-10px;
+  opacity: 1;
+  z-index: 10;
+  animation: moveGondola 6s linear infinite;
+}
+
+#remo {
+  height: 400px;
+  position: fixed;
+  left: 0vw;
+  bottom:-10px;
+  opacity: 1;
+  z-index: 10;
+  animation: remo 6s linear infinite;
+}
+
+#puente {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+  bottom: 0px;
+  z-index: 20;
+}
+
+@keyframes moveGondola {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50vw; 
+  }
+  100% {
+    left: 100vw; 
+  }
+}
+
+@keyframes remo {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 50vw;
+    transform: rotate(33deg);
+  }
+  100% {
+    left: 100vw;
+    transform: rotate(0deg);
+  }
+}
+
