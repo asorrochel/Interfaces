@@ -32,6 +32,7 @@ body {
   width: 200px;
   bottom: -200px;
   right: -100px;
+  transform: rotateZ(0deg);
   animation-delay: 5s;
   animation: convertirHulk 1s linear forwards;
 }
@@ -39,11 +40,12 @@ body {
 .brazo {
   width: 50px;
   position: absolute;
-  bottom: -120px;
-  right: 40px;
-  animation-delay: 3s;
+  bottom: -142px;
+  right: 47px;
+  
   opacity: 0;
   animation: mover-brazo 1s linear forwards;
+  animation-delay: 0.5s;
 }
 
 .coche {
@@ -52,7 +54,7 @@ body {
   bottom: -200px;
   right: 474px;
   transform: rotateY(180deg);
-  animation: mover-coche 1s linear forwards, volar-coche 1s linear forwards 1s;
+  animation: mover-coche 1s linear forwards, volar-coche 1s linear forwards 1.1s;
 }
 
 @keyframes mover-coche {
@@ -73,21 +75,23 @@ body {
 @keyframes mover-brazo {
   0% {
     opacity: 0;
-
     transform: rotateZ(0deg);
     
   }
-  100% {
+  50% {
     opacity: 1;
     transform: rotateZ(30deg);
-    bottom: -100px;  }
-  
+    bottom: -110px;  }
+  100% {
+    opacity:1;
+  }
 }
 
 @keyframes convertirHulk {
   0% {
     opacity: 0;
     content: url("persona.png");
+
   }
   100% {
     opacity: 1;
@@ -104,7 +108,7 @@ body {
   100% {
     right: 1000px;
             transform: rotateZ(1000deg);
-            transform-origin: 500px;
+            transform-origin: 100px;
             bottom: 1000px;
   }
   
