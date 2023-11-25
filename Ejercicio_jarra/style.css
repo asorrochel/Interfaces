@@ -1,54 +1,86 @@
 body {
-  padding: 0;
   margin: 0;
-  
-}
-#jarraBG {
-  width: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: vertir 6s linear infinite;
+  width: 100%;
+  height: 100vh;
 
 }
-#jarra {
-  transform:  rotateY(180deg);
-}
-#vasoBG {
-  width: 20%;
+
+#pocion {
   position: absolute;
-  top: 250px;
+  top: 225px;
   left: 250px;
+  width: 200px;
+  height: 200px;
+  transform-origin: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(vaso.png);
+  z-index: 2;
+
 }
 
-#contenido {
-  width: 65%;
-  height: 0px;
+#liquido {
+  background-color: rgb(255, 255, 255);
+  height: 140px;
+  width: 120px;
   position: absolute;
-  background-color: blue;
-  top: 90px;
-  left: 20px;
-  animation-delay: 6s;
-  animation: rellenar 6s linear infinite;
+  top: 260px;
+  left: 265px;
+  z-index: 1;
 }
 
-@keyframes vertir {
+body:hover #liquido {
+  animation: pocion 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+body:hover #jarra {
+  animation: jarra 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#jarra {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transform-origin: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(pocion.webp);
+  z-index: 2;
+}
+
+@keyframes pocion {
   0% {
-    transform:  rotateZ(0deg);
+      height: 0px;
+      top: 397px;
+      background-color: rgb(134, 226, 43)
   }
+
+
   100% {
-    transform:  rotateZ(45deg);
+      height: 140px;
+      top: 260px;
+      background-color: rgb(134, 226, 43)
+    }
   }
 
-}
 
-@keyframes rellenar {
+@keyframes jarra {
   0% {
-    height: 0px;
+      transform: rotate(0deg);
   }
+
+  85% {
+      transform: rotate(45deg);
+  }
+
   100% {
-    height: 100px;
+      transform: rotate(0deg);
   }
-
 }
-

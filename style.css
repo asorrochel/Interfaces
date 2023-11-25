@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -19,6 +19,21 @@ h1 {
     margin-bottom: 20px;
 }
 
+.centro {
+    display: flex;
+    flex-direction: column; /* Updated to column for mobile view */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Reduced the gap for better spacing on mobile */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -31,6 +46,7 @@ li {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Make the list items full width on mobile */
 }
 
 li a {
@@ -38,15 +54,6 @@ li a {
     color: #3498db;
     font-weight: bold;
     font-size: 16px;
-}
-
-li:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-
-li:hover a {
-    color: #fff; /* Add this to change link color when li is hovered */
 }
 
 footer {
@@ -58,9 +65,9 @@ footer {
     margin-top: 20px;
 }
 
-.centro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Media query for screens smaller than 600px (typical mobile devices) */
+@media screen and (max-width: 600px) {
+    .centro {
+        gap: 10px; /* Adjusted gap for better spacing on smaller screens */
+    }
 }
