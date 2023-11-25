@@ -57,3 +57,10 @@ footer {
     font-size: 14px;
     margin-top: 20px;
 }
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
