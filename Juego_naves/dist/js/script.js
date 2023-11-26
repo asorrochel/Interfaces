@@ -292,7 +292,7 @@ function renderPlanetButton(planet, container) {
   infoDiv.id = planet.info;
   infoDiv.className = "absolute z-30 hidden text-white rounded-md shadow-lg";
   infoDiv.style.left = "350px";
-  infoDiv.style.top = "195px";
+  infoDiv.style.top = "250px";
   document.body.appendChild(infoDiv);
 
   const nombre = document.createElement("h2");
@@ -335,7 +335,7 @@ function renderSystemButton(system) {
   infoDiv.id = system.info;
   infoDiv.className = "absolute z-30 hidden text-white rounded-md shadow-lg";
   infoDiv.style.left = "350px";
-  infoDiv.style.top = "195px";
+  infoDiv.style.top = "225px";
   document.body.appendChild(infoDiv);
 
   const systemTitle = document.createElement("h2");

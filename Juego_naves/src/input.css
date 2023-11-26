@@ -258,7 +258,7 @@ meter::-webkit-meter-bar{
   display: flex;
   position: absolute;
   z-index: 20;
-  bottom: 70px;
+  bottom: 100px;
   left: 320px;
   flex-direction: column;
   flex-wrap: wrap;
@@ -586,7 +586,7 @@ meter::-webkit-meter-bar{
   transform-style: preserve-3d;
   z-index: 20;
   position: absolute;
-  bottom: 145px;
+  bottom: 165px;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.42);
 }
