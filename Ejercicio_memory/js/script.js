@@ -33,4 +33,6 @@ document.getElementById('resetButton').addEventListener('click', () => {
     cartas.forEach((carta) => {
         carta.classList.remove('girada', 'correcta');
     });
+    contador_aciertos.innerHTML = 0;
+    contador_fallos.innerHTML = 0;
 });
