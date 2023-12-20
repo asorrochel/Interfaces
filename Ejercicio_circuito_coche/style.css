@@ -1,0 +1,111 @@
+.circuito-container {
+    margin: 3rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 800px;
+    position: relative;
+  }
+  
+  #circuito {
+    width: 800px;
+    position: relative;
+  }
+  
+  #coche {
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    left: 111px;
+            transform: translate(102px, 275px) rotate(0deg);
+            animation: move 5s linear infinite, move2 5s linear infinite 5s, move3 5s linear forwards 10s;
+            animation-play-state: paused;
+  }
+
+  #coche:hover {
+    animation-play-state: running;
+  }
+
+@keyframes move {
+    0% {
+        transform: translate(102px, 275px);
+    }
+    30% {
+        transform: translate(520px, 275px);
+    }
+    40% {
+        transform: translate(550px, 300px) rotate(45deg);
+    }
+    45% {
+        transform: translate(560px, 310px) rotate(60deg);
+    }
+    50% {
+        transform: translate(570px, 320px) rotate(75deg);
+    }
+    55% {
+        transform: translate(580px, 330px) rotate(90deg);
+    }
+    60% {
+        transform: translate(590px, 340px) rotate(105deg);
+    }
+    65% {
+        transform: translate(590px, 350px) rotate(120deg);
+    }
+    90% {
+        transform: translate(520px, 450px) rotate(135deg);
+    }
+    100% {
+        transform: translate(510px, 480px) rotate(180deg);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(510px, 480px) rotate(180deg);
+    }
+    15% {
+        transform: translate(325px, 480px) rotate(180deg);
+    }
+    25% {
+        transform: translate(250px, 400px) rotate(225deg);
+    }
+    40% {
+        transform: translate(220px, 380px) rotate(240deg);
+    }
+    50% {
+        transform: translate(170px, 380px) rotate(180deg);
+    }
+    65% {
+        transform: translate(50px, 480px) rotate(135deg);
+    }
+    75% {
+        transform: translate(50px, 480px) rotate(180deg);
+    }
+    85% {
+        transform: translate(-10px, 470px) rotate(225deg);
+    }
+    90% {
+        transform: translate(-40px, 450px) rotate(240deg);
+    }
+    100% {
+        transform: translate(-70px, 430px) rotate(270deg);
+    }
+    
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(-70px, 430px) rotate(270deg);
+    }
+    15% {
+        transform: translate(-70px, 400px) rotate(270deg);
+    }
+    25% {
+        transform: translate(-50px, 360px) rotate(300deg);
+    }
+    40% {
+        transform: translate(30px, 275px) rotate(315deg);
+    }
+    50% {
+        transform: translate(50px, 275px) rotate(360deg);
+    }
+}
